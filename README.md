@@ -1,4 +1,4 @@
-# Rota Prime — versão simplificada
+# Rota Prime 
 
 Site acadêmico fictício de locadora de carros feito apenas com **HTML e CSS**.
 
