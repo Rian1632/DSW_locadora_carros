@@ -1,0 +1,11 @@
+id,modelo,categoria,preco,imagem
+1,Fiat Mobi,Econômicos,119,/imagens/fiat%20mobi.jpg
+2,Hyundai HB20,Econômicos,149,/imagens/hyundai%20hb20.jpg
+3,Volkswagen Polo,Econômicos,169,/imagens/Volkswagen%20Polo.jpg
+4,Fiat Cronos,Conforto,179,/imagens/Fiat%20Cronos.jpg
+5,Mercedes Classe C,Conforto,349,/imagens/mercedes.jpg
+6,Volkswagen T-Cross,Conforto,239,/imagens/tcross.jpg
+7,Class Minivan,Familiar,289,/imagens/Class%20Minivan.jpg
+8,Van Premium,Familiar,329,/imagens/Van.jpg
+9,Fiat Strada,Utilitários,219,/imagens/Fiat%20Strada.jpg
+10,Fusca Clássico,Utilitários,259,/imagens/fusca.jpg
