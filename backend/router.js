@@ -3,8 +3,6 @@ const storage = require("./storage");
 
 const router = express.Router();
 
-// ---------- Utilidades ----------
-
 const MAX_DIAS = 90;
 const CAMPOS = ["nome", "email", "carro_id", "retirada", "devolucao"];
 
