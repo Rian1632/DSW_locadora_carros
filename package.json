@@ -1,0 +1,13 @@
+{
+  "name": "rota-prime",
+  "version": "1.0.0",
+  "description": "Rota Prime - reservas de veículos online (Etapa 2)",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
