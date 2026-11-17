@@ -32,7 +32,7 @@ app.use("/api", (req, res) => {
 app.use("/assets", express.static(path.join(RAIZ, "assets")));
 app.use("/pages", express.static(path.join(RAIZ, "pages")));
 app.use("/imagens", express.static(path.join(__dirname, "imagens")));
-app.get("/", (req, res) => res.sendFile(path.join(RAIZ, "index.html")));
+app.get(["/", "/index.html"], (req, res) => res.sendFile(path.join(RAIZ, "index.html")));
 
 // Erros (JSON malformado, corpo grande demais, falhas inesperadas)
 app.use((err, req, res, next) => {

@@ -41,3 +41,38 @@ textarea { min-height: 90px; }
   .banner h1 { font-size: 30px; }
   .destaque img { max-height: 220px; }
 }
+
+/* ---------- Etapa 2: reservas online ---------- */
+.busca { max-width: 450px; margin-bottom: 14px; }
+.filtro { margin-bottom: 6px; }
+.chip { border: none; background: #e5ebf2; padding: 8px 14px; border-radius: 7px; margin: 0 8px 8px 0; font: inherit; color: inherit; cursor: pointer; }
+.chip:hover { background: #d3dde9; }
+.chip.ativo { background: #13243b; color: white; }
+.formulario { margin-bottom: 20px; }
+.duas-colunas { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.erro-campo { color: #b3261e; font-size: 14px; margin: 4px 0 0; min-height: 0; }
+.erro-campo:empty { display: none; }
+.mensagem { padding: 10px 14px; border-radius: 8px; margin: 14px 0; }
+.mensagem.erro { background: #fdeceb; color: #8c1d18; border: 1px solid #f4b8b4; }
+.mensagem.ok { background: #e7f6ec; color: #14532d; border: 1px solid #a7dbb7; }
+.formulario-largura { max-width: 750px; }
+.resumo { background: #eef3f9; border-radius: 8px; padding: 10px 14px; margin: 16px 0 4px; font-weight: bold; color: #0c426a; }
+.botao.secundario { background: #e5ebf2; }
+.botao.secundario:hover { background: #d3dde9; }
+.botao.perigo { background: #b3261e; color: white; }
+.botao.perigo:hover { background: #8c1d18; }
+.botao:disabled { opacity: .6; cursor: not-allowed; }
+.confirmacao { text-align: center; }
+.codigo { font-size: 52px; font-weight: bold; color: #0c426a; background: #fff8d6; border: 2px dashed #ffd43b; border-radius: 12px; display: inline-block; padding: 4px 34px; margin: 4px 0 12px; }
+.selo { font-size: 14px; padding: 3px 10px; border-radius: 20px; vertical-align: middle; margin-left: 6px; }
+.selo.ativa { background: #e7f6ec; color: #14532d; }
+.selo.cancelada { background: #fdeceb; color: #8c1d18; }
+.lista-dados { display: grid; grid-template-columns: 130px 1fr; gap: 6px 14px; margin: 0 0 12px; }
+.lista-dados dt { font-weight: bold; }
+.lista-dados dd { margin: 0; word-break: break-word; }
+:focus-visible { outline: 3px solid #ffd43b; outline-offset: 2px; }
+@media (max-width: 750px) {
+  .duas-colunas { grid-template-columns: 1fr; gap: 0; }
+  .lista-dados { grid-template-columns: 1fr; gap: 0; }
+  .lista-dados dd { margin-bottom: 8px; }
+}

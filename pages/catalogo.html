@@ -14,67 +14,28 @@
 <a href="catalogo.html">Veículos</a>
 <a href="servicos.html">Serviços</a>
 <a href="sobre.html">Sobre</a>
-<a href="reserva.html">Reserva</a></nav>
+<a href="reserva.html">Reserva</a>
+<a href="minha-reserva.html">Minha reserva</a></nav>
     </div>
   </header>
   <main>
-<section class="banner"><div class="container "><div><h1>Encontre seu próximo carro.</h1><p>Conheça os modelos e valores de referência. A disponibilidade será confirmada pela equipe.</p><a class="botao" href="reserva.html">Solicitar reserva</a></div></div></section><section class="secao"><div class="container"><p class="filtro"><a href="#0">Econômicos</a><a href="#1">Conforto</a><a href="#2">Familiar</a><a href="#3">Utilitários</a></p><h2 id="0">Econômicos</h2><div class="grade"><article class="cartao">
-  <img src="../assets/images/fiat mobi.jpg" alt="Fiat Mobi">
-  <h3>Fiat Mobi</h3><p>Manual, 5 lugares</p>
-  <p class="preco">R$ 119 / diária</p>
-  <a class="botao" href="reserva.html">Reservar</a>
-</article><article class="cartao">
-  <img src="../assets/images/hyundai hb20.jpg" alt="Hyundai HB20">
-  <h3>Hyundai HB20</h3><p>Compacto, 5 lugares</p>
-  <p class="preco">R$ 149 / diária</p>
-  <a class="botao" href="reserva.html">Reservar</a>
-</article><article class="cartao">
-  <img src="../assets/images/Volkswagen Polo.jpg" alt="Volkswagen Polo">
-  <h3>Volkswagen Polo</h3><p>Compacto, 5 lugares</p>
-  <p class="preco">R$ 169 / diária</p>
-  <a class="botao" href="reserva.html">Reservar</a>
-</article></div><h2 id="1">Conforto</h2><div class="grade"><article class="cartao">
-  <img src="../assets/images/Fiat Cronos.jpg" alt="Fiat Cronos">
-  <h3>Fiat Cronos</h3><p>Sedã, 5 lugares</p>
-  <p class="preco">R$ 179 / diária</p>
-  <a class="botao" href="reserva.html">Reservar</a>
-</article><article class="cartao">
-  <img src="../assets/images/mercedes.jpg" alt="Mercedes Classe C">
-  <h3>Mercedes Classe C</h3><p>Luxo, 5 lugares</p>
-  <p class="preco">R$ 349 / diária</p>
-  <a class="botao" href="reserva.html">Reservar</a>
-</article><article class="cartao">
-  <img src="../assets/images/tcross.jpg" alt="Volkswagen T-Cross">
-  <h3>Volkswagen T-Cross</h3><p>SUV, 5 lugares</p>
-  <p class="preco">R$ 239 / diária</p>
-  <a class="botao" href="reserva.html">Reservar</a>
-</article></div><h2 id="2">Familiar</h2><div class="grade"><article class="cartao">
-  <img src="../assets/images/Class Minivan.jpg" alt="Class Minivan">
-  <h3>Class Minivan</h3><p>7 lugares</p>
-  <p class="preco">R$ 289 / diária</p>
-  <a class="botao" href="reserva.html">Reservar</a>
-</article><article class="cartao">
-  <img src="../assets/images/Van.jpg" alt="Van Premium">
-  <h3>Van Premium</h3><p>Para grupos</p>
-  <p class="preco">R$ 329 / diária</p>
-  <a class="botao" href="reserva.html">Reservar</a>
-</article></div><h2 id="3">Utilitários</h2><div class="grade"><article class="cartao">
-  <img src="../assets/images/Fiat Strada.jpg" alt="Fiat Strada">
-  <h3>Fiat Strada</h3><p>Carga leve</p>
-  <p class="preco">R$ 219 / diária</p>
-  <a class="botao" href="reserva.html">Reservar</a>
-</article><article class="cartao">
-  <img src="../assets/images/fusca.jpg" alt="Fusca Clássico">
-  <h3>Fusca Clássico</h3><p>Modelo retrô</p>
-  <p class="preco">R$ 259 / diária</p>
-  <a class="botao" href="reserva.html">Reservar</a>
-</article></div></div></section>
+<section class="banner"><div class="container "><div><h1>Encontre seu próximo carro.</h1><p>Pesquise pelo modelo, escolha o carro e reserve online em poucos minutos.</p><a class="botao" href="reserva.html">Solicitar reserva</a></div></div></section><section class="secao"><div class="container">
+<form id="form-busca" class="busca" role="search">
+  <label for="busca">Pesquisar modelo</label>
+  <input id="busca" type="search" placeholder="Ex.: Polo, Strada, HB20" autocomplete="off">
+</form>
+<div id="filtros" class="filtro" aria-label="Filtrar por categoria"></div>
+<p id="status-catalogo" class="aviso" role="status">Carregando veículos...</p>
+<div id="grade-carros" class="grade"></div>
+</div></section>
   </main>
   <footer class="rodape">
     <div class="container">
       <p><strong>Rota Prime</strong> — Aluguel de veículos</p>
-      <p>Projeto acadêmico fictício em HTML e CSS.</p>
+      <p>Projeto acadêmico fictício — HTML, CSS, JavaScript e Node.js.</p>
     </div>
   </footer>
+  <script src="../assets/js/api.js"></script>
+  <script src="../assets/js/catalogo.js"></script>
 </body>
 </html>

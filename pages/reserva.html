@@ -14,30 +14,42 @@
 <a href="catalogo.html">Veículos</a>
 <a href="servicos.html">Serviços</a>
 <a href="sobre.html">Sobre</a>
-<a href="reserva.html">Reserva</a></nav>
+<a href="reserva.html">Reserva</a>
+<a href="minha-reserva.html">Minha reserva</a></nav>
     </div>
   </header>
   <main>
-<section class="banner"><div class="container "><div><h1>Solicite sua reserva.</h1><p>Preencha as informações abaixo. Este formulário é apenas demonstrativo nesta etapa.</p></div></div></section><section class="secao"><div class="container"><form class="formulario" action="reserva.html" method="get">
+<section class="banner"><div class="container "><div><h1>Faça sua reserva.</h1><p>Escolha o veículo, informe seus dados e as datas. Ao confirmar, você recebe um código para consultar, alterar ou cancelar a reserva.</p></div></div></section><section class="secao"><div class="container">
+<form class="formulario" id="form-reserva" novalidate>
 <h2>Dados da locação</h2>
-<label for="nome">Nome completo</label><input id="nome" name="nome" type="text" required>
-<label for="email">E-mail</label><input id="email" name="email" type="email" required>
-<label for="telefone">Telefone</label><input id="telefone" name="telefone" type="tel" required>
-<label for="retirada">Data de retirada</label><input id="retirada" name="retirada" type="date" required>
-<label for="devolucao">Data de devolução</label><input id="devolucao" name="devolucao" type="date" required>
-<label for="categoria">Categoria do veículo</label>
-<select id="categoria" name="categoria" required><option value="">Selecione</option><option>Econômico</option><option>Conforto</option><option>Familiar</option><option>Utilitário</option></select>
-<label for="mensagem">Observações</label><textarea id="mensagem" name="mensagem"></textarea>
-<p><label class="opcao"><input type="checkbox" required> Concordo com o envio das informações para a simulação.</label></p>
-<button class="botao" type="submit">Enviar</button><button class="botao" type="reset">Limpar</button>
-<p class="aviso">Atenção: nesta versão HTML/CSS, o formulário não salva nem envia reservas para uma empresa. Isso será implementado em outra etapa.</p>
-</form></div></section>
+<label for="carro_id">Veículo</label>
+<select id="carro_id" name="carro_id" required><option value="">Carregando...</option></select>
+<p class="erro-campo" data-erro="carro_id"></p>
+<label for="nome">Nome completo</label><input id="nome" name="nome" type="text" required minlength="3" maxlength="100" autocomplete="name">
+<p class="erro-campo" data-erro="nome"></p>
+<label for="email">E-mail</label><input id="email" name="email" type="email" required maxlength="100" autocomplete="email">
+<p class="erro-campo" data-erro="email"></p>
+<div class="duas-colunas">
+  <div><label for="retirada">Data de retirada</label><input id="retirada" name="retirada" type="date" required>
+  <p class="erro-campo" data-erro="retirada"></p></div>
+  <div><label for="devolucao">Data de devolução</label><input id="devolucao" name="devolucao" type="date" required>
+  <p class="erro-campo" data-erro="devolucao"></p></div>
+</div>
+<p id="resumo" class="resumo" role="status"></p>
+<p id="msg-form" class="mensagem" hidden></p>
+<button class="botao" type="submit">Confirmar reserva</button><button class="botao secundario" type="reset">Limpar</button>
+<p class="aviso">Já tem um código? <a href="minha-reserva.html"><u>Consulte sua reserva</u></a>.</p>
+</form>
+<div id="confirmacao" class="formulario confirmacao" hidden></div>
+</div></section>
   </main>
   <footer class="rodape">
     <div class="container">
       <p><strong>Rota Prime</strong> — Aluguel de veículos</p>
-      <p>Projeto acadêmico fictício em HTML e CSS.</p>
+      <p>Projeto acadêmico fictício — HTML, CSS, JavaScript e Node.js.</p>
     </div>
   </footer>
+  <script src="../assets/js/api.js"></script>
+  <script src="../assets/js/reserva.js"></script>
 </body>
 </html>

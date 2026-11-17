@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha reserva | Rota Prime</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container menu">
+      <a class="logo" href="../index.html"><span>RP</span> Rota Prime</a>
+      <nav><a href="../index.html">Início</a>
+<a href="catalogo.html">Veículos</a>
+<a href="servicos.html">Serviços</a>
+<a href="sobre.html">Sobre</a>
+<a href="reserva.html">Reserva</a>
+<a href="minha-reserva.html">Minha reserva</a></nav>
+    </div>
+  </header>
+  <main>
+<section class="banner"><div class="container "><div><h1>Minha reserva.</h1><p>Informe o código recebido e o e-mail usado na reserva para consultar, alterar ou cancelar.</p></div></div></section><section class="secao"><div class="container">
+<form class="formulario" id="form-consulta">
+<h2>Consultar reserva</h2>
+<div class="duas-colunas">
+  <div><label for="codigo">Código da reserva</label><input id="codigo" name="codigo" type="number" min="1" required inputmode="numeric"></div>
+  <div><label for="email-consulta">E-mail</label><input id="email-consulta" name="email" type="email" required></div>
+</div>
+<button class="botao" type="submit">Consultar</button>
+</form>
+<p id="msg-consulta" class="mensagem formulario-largura" hidden></p>
+<div id="painel" class="formulario" hidden>
+  <div id="detalhes"></div>
+</div>
+<form class="formulario" id="form-edicao" hidden novalidate>
+<h2>Alterar reserva</h2>
+<label for="e-carro">Veículo</label><select id="e-carro" name="carro_id" required></select>
+<p class="erro-campo" data-erro="carro_id"></p>
+<label for="e-nome">Nome completo</label><input id="e-nome" name="nome" type="text" required>
+<p class="erro-campo" data-erro="nome"></p>
+<label for="e-email">E-mail</label><input id="e-email" name="email" type="email" required>
+<p class="erro-campo" data-erro="email"></p>
+<div class="duas-colunas">
+  <div><label for="e-retirada">Data de retirada</label><input id="e-retirada" name="retirada" type="date" required>
+  <p class="erro-campo" data-erro="retirada"></p></div>
+  <div><label for="e-devolucao">Data de devolução</label><input id="e-devolucao" name="devolucao" type="date" required>
+  <p class="erro-campo" data-erro="devolucao"></p></div>
+</div>
+<p id="msg-edicao" class="mensagem" hidden></p>
+<button class="botao" type="submit">Salvar alterações</button><button class="botao secundario" type="button" id="cancelar-edicao">Fechar</button>
+</form>
+</div></section>
+  </main>
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Rota Prime</strong> — Aluguel de veículos</p>
+      <p>Projeto acadêmico fictício — HTML, CSS, JavaScript e Node.js.</p>
+    </div>
+  </footer>
+  <script src="../assets/js/api.js"></script>
+  <script src="../assets/js/minha-reserva.js"></script>
+</body>
+</html>
