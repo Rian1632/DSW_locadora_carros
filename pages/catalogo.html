@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veículos | Rota Prime</title>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
   <header class="topo">
     <div class="container menu">
       <a class="logo" href="../index.html"><span>RP</span> Rota Prime</a>
       <nav><a href="../index.html">Início</a>
-<a href="catalogo.html">Veículos</a>
-<a href="servicos.html">Serviços</a>
-<a href="sobre.html">Sobre</a>
-<a href="reserva.html">Reserva</a>
-<a href="minha-reserva.html">Minha reserva</a></nav>
+        <a href="catalogo.html">Veículos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="reserva.html">Reserva</a>
+        <a href="minha-reserva.html">Minha reserva</a>
+      </nav>
     </div>
   </header>
   <main>
-<section class="banner"><div class="container "><div><h1>Encontre seu próximo carro.</h1><p>Pesquise pelo modelo, escolha o carro e reserve online em poucos minutos.</p><a class="botao" href="reserva.html">Solicitar reserva</a></div></div></section><section class="secao"><div class="container">
-<form id="form-busca" class="busca" role="search">
-  <label for="busca">Pesquisar modelo</label>
-  <input id="busca" type="search" placeholder="Ex.: Polo, Strada, HB20" autocomplete="off">
-</form>
-<div id="filtros" class="filtro" aria-label="Filtrar por categoria"></div>
-<p id="status-catalogo" class="aviso" role="status">Carregando veículos...</p>
-<div id="grade-carros" class="grade"></div>
-</div></section>
+    <section class="banner">
+      <div class="container ">
+        <div>
+          <h1>Encontre seu próximo carro.</h1>
+          <p>Pesquise pelo modelo, escolha o carro e reserve online em poucos minutos.</p><a class="botao"
+            href="reserva.html">Solicitar reserva</a>
+        </div>
+      </div>
+    </section>
+    <section class="secao">
+      <div class="container">
+        <form id="form-busca" class="busca" role="search">
+          <label for="busca">Pesquisar modelo</label>
+          <input id="busca" type="search" placeholder="Ex.: Polo, Strada, HB20" autocomplete="off">
+        </form>
+        <div id="filtros" class="filtro" aria-label="Filtrar por categoria"></div>
+        <p id="status-catalogo" class="aviso" role="status">Carregando veículos...</p>
+        <div id="grade-carros" class="grade"></div>
+      </div>
+    </section>
   </main>
   <footer class="rodape">
     <div class="container">
@@ -38,4 +52,5 @@
   <script src="../assets/js/api.js"></script>
   <script src="../assets/js/catalogo.js"></script>
 </body>
+
 </html>
